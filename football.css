@@ -1,0 +1,20 @@
+.icon {
+    cursor: pointer;
+}
+
+.actionColumn {
+    width: 5%;
+}
+
+.pageContainer {
+    margin-top: 1%;
+}
+
+.wireframe {
+    border: 1px solid black;
+}
+
+.row-wireframe {
+    border: 1px solid black;
+    height: 400px
+}
