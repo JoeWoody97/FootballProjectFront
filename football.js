@@ -50,11 +50,14 @@ function renderTeam(team) {
     contact.innerText = team.contactDetails;
     newRow.appendChild(contact);
 
+    const action = document.createElement("td")
+    newRow.appendChild(action);
+
     const deleteTeamButton = document.createElement("i");
-    deleteTeamButton.className = "fas fa-trash-alt icon"
+    deleteTeamButton.className = "fas fa-trash-alt icon trash"
     deleteTeamButton.setAttribute("title", "Delete team");
     deleteTeamButton.addEventListener('click', () => deleteTeam(team.id));
-    newRow.appendChild(deleteTeamButton);
+    action.appendChild(deleteTeamButton);
 
     const updateTeamButton = document.createElement("i");
     updateTeamButton.className = "fas fa-edit icon"
@@ -63,7 +66,8 @@ function renderTeam(team) {
         myModal.toggle();
         teamId = team.id;
     })
-    newRow.appendChild(updateTeamButton);
+    action.appendChild(updateTeamButton);
+    newRow.appendChild(action);
 
     return newRow;
 }
