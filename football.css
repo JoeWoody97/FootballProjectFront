@@ -1,9 +1,17 @@
 .icon {
     cursor: pointer;
 }
-
+/* 
 .actionColumn {
     width: 5%;
+} */
+
+/* .teamFormContainer {
+    width: fit-content;
+} */
+
+.trash {
+    margin-right: 20px;
 }
 
 .pageContainer {
